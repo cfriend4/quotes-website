@@ -9,12 +9,21 @@ html, body{
    justify-content: center;
    flex-direction: column; 
 }
+body{
+    background-color: lightblue;
+}
 
 button {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+}
+input[type="text"]{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius:4px;
 }
 
 #motivational-button {
@@ -35,6 +44,12 @@ button {
     padding: 10px;
     border-radius: 5px;
 }
+#greeting-button {
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -48,7 +63,22 @@ button {
     font-size: 24px;
     font-weight: bold;
     font-family: 'Indie Flower', cursive;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    /*text-shadow: 2px 2px 4px rgba(0,0,0,0.6);*/
     animation: fadeIn 2s;
+}
+#roast-button {
+    background-color:orangered;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
+#greetingText{
+    color: darkslateblue;
+    margin-top:20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+    /*text-shadow: 2px 2px 4px rgba(0,0,0,0.6);*/
+
 }
 

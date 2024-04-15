@@ -13,6 +13,19 @@ function addClickListener(buttonId, displayId, texts){
     });
 }
 
+//Function to greet the user when they input their name
+function greetUser(){
+    let name = document.getElementById('nameInput').value;
+    if(name === ''){
+        var greetingMessage = "Please input a value."
+    } else if(name === 'Craig' || name === 'craig'){
+        var greetingMessage = "Wrong answer! > : - ("
+    } else {
+        var greetingMessage = "Hello, " + name + "!";
+    }
+    document.getElementById('greetingText').textContent = greetingMessage;
+}
+
 //Lists for quotes/jokes
 //Motivational Quotes
 const motivationalQuotes = [
@@ -36,8 +49,16 @@ const egoChecks = [
     "Don't go around saying the world owes you a living. The world owes you nothing. It was here first. - Mark Twain",
     "Of all the words of mice and men, the saddest are 'it might have been' - Kurt Vonnegut"
 ];
+//Yo mamma jokes and roasts
+const roasts = [
+    "Yo mamma's so fat her blood type is Ragu.",
+    "I look at you and think 'Two billion years of evolution for this'.",
+    "You're the reason this country has to put directions on shampoo bottles.",
+    "Sorry, I can't think of an insult dumb enough for you to understand."
+];
 
 //Function Calls
 addClickListener('motivational-button', 'displayText', motivationalQuotes);
 addClickListener('joke-button', 'displayText', jokes);
-addClickListener('ego-button', 'displayText', egoChecks)
+addClickListener('ego-button', 'displayText', egoChecks);
+addClickListener('roast-button', 'displayText', roasts);
