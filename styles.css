@@ -3,11 +3,10 @@
 html, body{
    height: 100%;
    margin: 0;
-   padding: 0;
+   padding: 20px;
    display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column; 
+   justify-content: space-between;
+   flex-direction: row; 
 }
 body{
     background-color: lightblue;
@@ -79,6 +78,42 @@ input[type="text"]{
     font-weight: bold;
     font-family: 'Indie Flower', cursive;
     /*text-shadow: 2px 2px 4px rgba(0,0,0,0.6);*/
+
+}
+
+.center-content, .right-content{
+    flex: 1;
+    margin: 10px;
+}
+
+.center-content {
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow:1;
+    padding:20px;
+}
+.right-content {
+    text-align: center;
+    width: 1000px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width: 768px) {
+    html, body {
+        flex-direction:column;
+    }
+.right-content {
+    width: 100%;
+}
+.center-content {
+    width: 100%;
+}
 
 }
 
